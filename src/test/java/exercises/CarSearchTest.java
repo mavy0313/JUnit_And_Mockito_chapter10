@@ -5,7 +5,6 @@ import org.junit.Test;
 import static exercises.Color.BLUE;
 import static exercises.Color.RED;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
 import static org.fest.assertions.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -26,8 +25,6 @@ public class CarSearchTest {
 
         CarSearch carSearch = new CarSearch();
         carSearch.addCar(car);
-
-        //carSearch.findSportCars();
 
         assertEquals(car, carSearch.findSportCars().get(0));
     }
