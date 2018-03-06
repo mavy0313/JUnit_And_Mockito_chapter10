@@ -1,9 +1,9 @@
-package exercises;
+package exercises.car;
 
+import exercises.car.Car;
+import exercises.car.CarSearchRedesign;
 import org.junit.Test;
 
-import static exercises.Color.BLUE;
-import static exercises.Color.RED;
 import static org.fest.assertions.Assertions.assertThat;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;

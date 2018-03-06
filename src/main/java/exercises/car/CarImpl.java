@@ -1,4 +1,4 @@
-package exercises;
+package exercises.car;
 
 public class CarImpl implements Car {
 

@@ -1,9 +1,13 @@
-package exercises;
+package exercises.car;
 
+import exercises.car.CarImpl;
+import exercises.car.CarSearchRedesign;
+import exercises.car.Engine;
+import exercises.car.Manufacturer;
 import org.junit.Test;
 
-import static exercises.Color.BLUE;
-import static exercises.Color.RED;
+import static exercises.car.Color.BLUE;
+import static exercises.car.Color.RED;
 import static org.fest.assertions.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
