@@ -4,7 +4,7 @@ public class Stack {
 
     private final int size;
     private int[] array;
-    private int currentIndex;
+    private int currentIndex = -1;
 
     public Stack(int size) {
         this.size = size;
@@ -16,15 +16,22 @@ public class Stack {
     }
 
     public void push(int i) {
-        array[currentIndex + 1] = i;
+        currentIndex++;
+        array[currentIndex] = i;
     }
 
-    public boolean contains(int element) {
-        for (int i = 0; i < size; i++) {
-            if (element == array[i]) {
-                return true;
-            }
-        }
-        return false;
+//    public boolean contains(int element) {
+//        for (int i = 0; i < size; i++) {
+//            if (element == array[i]) {
+//                return true;
+//            }
+//        }
+//        return false;
+//    }
+
+    public int pop() {
+        int result = array[currentIndex];
+        currentIndex--;
+        return result;
     }
 }
